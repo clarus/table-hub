@@ -21,4 +21,4 @@ On démarre le serveur :
 
     rails server
 
-L'application est accessible par [:3000](http://localhost:3000/).
+L'application est accessible par [localhost:3000](http://localhost:3000/).
