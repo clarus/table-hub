@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  summary: MyText
+  name: "Mimi"
+  email: "mimi@gmail.com"
+  summary: "Le Shannon (en irlandais: an tSionnain ou an tSionna) est un cours d'eau partageant l'Irlande d'est en ouest, Ptolémée, le premier, l'indiqua sur une carte. L'embouchure de ce fleuve long de 386 km se trouve sur l'océan, en direction occidentale, près de Limerick."
 
 two:
-  name: MyString
-  email: MyString
-  summary: MyText
+  name: "Au chien"
+  email: "au.chien@gmail.com"
+  summary: "Le chien (Canis lupus familiaris) est la sous-espèce domestique de Canis lupus, un mammifère de la famille des canidés qui comprend également le loup gris, ancêtre sauvage du chien, et le dingo, chien domestique redevenu sauvage."
