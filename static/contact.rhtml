@@ -1,0 +1,14 @@
+<%= header("", :contact) %>
+      <% menu = [] %>
+      <%= side_nav_header menu %>
+            <h1>Contact</h1>
+            <p>
+              <script language="JavaScript">
+                var name = "mail";
+                var domain = "table-hub.com";
+                document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
+                document.write(name + '@' + domain + '</a>');
+              </script>
+            </p>
+      <%= side_nav_footer %>
+<%= footer %>

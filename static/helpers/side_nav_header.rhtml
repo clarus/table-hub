@@ -1,0 +1,10 @@
+<div class="row">
+        <div class="col-lg-3 nav-list">
+          <ul>
+            <% for id, name in menu do %>
+            <li><i class="icon-chevron-right"></i> <a href="#<%= id %>"><%= h name %></a></li>
+            <% end %>
+          </ul>
+        </div>
+        <main>
+          <div class="col-lg-9">

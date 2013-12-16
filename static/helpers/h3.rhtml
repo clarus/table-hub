@@ -1,0 +1,2 @@
+<% title = menu.find {|id2, _| id2 == id} %>
+<h3 id="<%= id %>"><%= title ? h(title[1]) : raise("#{id.inspect} not found.") %></h3>

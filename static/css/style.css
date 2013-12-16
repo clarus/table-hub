@@ -1,0 +1,59 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+header, main, footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.jumbotron img {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.nav-list ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.nav-list li {
+  line-height: 25px;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}

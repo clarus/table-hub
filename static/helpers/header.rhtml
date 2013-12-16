@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Hub</title>
+    <meta name="author" content="Guillaume Claret">
+    <meta name="description" content="Table-Hub">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href="<%= dir %>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<%= dir %>css/style.css" rel="stylesheet">
+    <link href="<%= dir %>fonts/fontawesome.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav nav-pills pull-right">
+          <% links = [
+              [:home, "Accueil", "."],
+              [:contact, "Contact", "contact.html"]
+            ]
+            if active_link && !links.find {|l| l[0] == active_link} then
+              raise "Link \"#{active_link.inspect}\" not found"
+            end
+            links.each do |id, name, url|
+          %>
+          <li<%= " class=\"active\" " if active_link == id %>><a href="<%= dir + url %>"><%= h name %></a></li>
+          <% end %>
+        </ul>
+        <img src="images/favicon.png" style="float: left; height: 40px;" />
+        <h3 class="text-muted">Table-Hub</h3>
+      </header>
