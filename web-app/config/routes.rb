@@ -1,4 +1,6 @@
 WebApp::Application.routes.draw do
+  root to: "static#index"
+  
   scope :api do
     resources :users
   end
