@@ -47,3 +47,6 @@ end
 # Use Ember.js
 gem 'ember-rails'
 gem 'ember-source', '1.2.0'
+
+# Use Bootstrap
+gem 'bootstrap-sass'

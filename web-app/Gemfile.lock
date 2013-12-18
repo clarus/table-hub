@@ -33,6 +33,8 @@ GEM
       ember-source
       execjs
       handlebars-source
+    bootstrap-sass (3.0.3.0)
+      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -126,6 +128,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
   ember-rails
   ember-source (= 1.2.0)

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebApp</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table-Hub</title>
+  <meta name="author" content="Table-Hub">
+  <meta name="description" content="Table-Hub">
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <ul class="nav nav-pills pull-right">
+        <li class="active" ><a href=".">Accueil</a></li>
+      </ul>
+      <a href="."><img src="assets/favicon.png" style="float: left; height: 40px;" /></a>
+      <h3><a href="."><span class="text-muted">Table-Hub</span></a></h3>
+    </header>
 
 <%= yield %>
 
+    <footer>
+      <p>&copy; Table-Hub 2013</p>
+    </footer>
+  </div>
 </body>
 </html>
