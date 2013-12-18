@@ -21,4 +21,6 @@ On démarre le serveur :
 
     rails server
 
-L'application est accessible par [localhost:3000](http://localhost:3000/).
+L'application est accessible par [localhost:3000](http://localhost:3000/). Pour l'instant :
+* page d'accueil [localhost:3000/](http://localhost:3000/)
+* liste [JSON](http://www.json.org/) des comptes [localhost:3000/api/users](http://localhost:3000/api/users)
