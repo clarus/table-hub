@@ -1,2 +1,17 @@
-<h1>Table-Hub</h1>
-<p>Find me in app/views/static/index.html.erb</p>
+<script type="text/x-handlebars" id="application">
+  <div class="container">
+    <header>
+      <ul class="nav nav-pills pull-right">
+        <li class="active" ><a href="#">Accueil</a></li>
+      </ul>
+      <a href="."><img src="assets/favicon.png" alt="logo" style="float: left; height: 40px;" /></a>
+      <h3><a href="#"><span class="text-muted">Table-Hub</span></a></h3>
+    </header>
+    <main>
+      {{outlet}}
+    </main>
+    <footer>
+      <p>&copy; Table-Hub 2013</p>
+    </footer>
+  </div>
+</script>

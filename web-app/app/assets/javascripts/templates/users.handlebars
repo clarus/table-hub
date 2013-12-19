@@ -1,0 +1,9 @@
+<h1>Utilisateurs</h1>
+<p>Nombre d'utilisateurs: {{usersCount}}.</p>
+<ul>
+  {{#each user in controller}}
+    <li>{{user.name}}</li>
+  {{else}}
+    <li>no users… :-(</li>
+  {{/each}}
+</ul>
