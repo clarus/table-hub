@@ -8,5 +8,3 @@
 
 # for more details see: http://emberjs.com/guides/application/
 window.WebApp = Ember.Application.create()
-
-WebApp.ApplicationAdapter = DS.FixtureAdapter.extend();
