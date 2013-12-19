@@ -2,8 +2,9 @@
 <p>Nombre d'utilisateurs: {{usersCount}}.</p>
 <ul>
   {{#each user in controller}}
-    <li>{{user.name}}</li>
+    <li>{{#link-to "user" user}}{{user.name}}{{/link-to}}</li>
   {{else}}
     <li>no users… :-(</li>
   {{/each}}
 </ul>
+{{outlet}}
