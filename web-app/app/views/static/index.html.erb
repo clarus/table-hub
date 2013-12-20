@@ -2,14 +2,13 @@
   <div class="container">
     <header>
       <ul class="nav nav-pills pull-right">
-        <li class="active" ><a href="#">Accueil</a></li>
+        {{#link-to "index" tagName="li" href=false}}{{#link-to "index"}}Accueil{{/link-to}}{{/link-to}}
+        {{#link-to "users" tagName="li" href=false}}{{#link-to "users"}}Utilisateurs{{/link-to}}</a>{{/link-to}}
       </ul>
       <a href="."><img src="assets/favicon.png" alt="logo" style="float: left; height: 40px;" /></a>
-      <h3><a href="#"><span class="text-muted">Table-Hub</span></a></h3>
+      <h3>{{#link-to "index"}}<span class="text-muted">Table-Hub</span>{{/link-to}}</h3>
     </header>
-    <main>
-      {{outlet}}
-    </main>
+    {{outlet}}
     <footer>
       <p>&copy; Table-Hub 2013</p>
     </footer>
