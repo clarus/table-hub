@@ -1,7 +1,15 @@
-<div>
+<div class="col-md-5">
   <dl class="dl-horizontal">
     <dt>Nom</dt><dd>{{name}}</dd>
     <dt>Email</dt><dd>{{email}}</dd>
     <dt>Résumé</dt><dd>{{summary}}</dd>
   </dl>
+  <button {{action "edit"}}>Éditer</button>
+  <button {{action "delete"}}>Supprimer</button>
+  {{#if deleteMode}}
+    <p>Confirmer&nbsp;?</p>
+    <button {{action "confirmDelete"}}>Oui</button>
+    <button {{action "cancelDelete"}}>Non</button>
+  {{/if}}
 </div>
+{{outlet}}
