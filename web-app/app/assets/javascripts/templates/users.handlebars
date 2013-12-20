@@ -1,15 +1,17 @@
-<h1>Utilisateurs</h1>
-<div class="row">
-  <div class="col-md-2">
-    <p>Il y a {{usersCount}} utilisateurs&nbsp;:</p>
-    <ul>
-      {{#each user in controller}}
-        <li>{{#link-to "user" user}}{{user.name}}{{/link-to}}</li>
-      {{else}}
-        <li>Aucun utilisateur&nbsp;...</li>
-      {{/each}}
-    </ul>
-    {{#link-to "users.create"}}Ajouter{{/link-to}}
+<main>
+  <h1>Utilisateurs</h1>
+  <div class="row">
+    <div class="col-md-2">
+      <p>Il y a {{usersCount}} utilisateurs&nbsp;:</p>
+      <ul>
+        {{#each user in controller}}
+          <li>{{#link-to "user" user}}{{user.name}}{{/link-to}}</li>
+        {{else}}
+          <li>Aucun utilisateur&nbsp;...</li>
+        {{/each}}
+      </ul>
+      {{#link-to "users.create"}}Ajouter{{/link-to}}
+    </div>
+    {{outlet}}
   </div>
-  {{outlet}}
-</div>
+</main>

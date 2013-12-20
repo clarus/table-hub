@@ -4,3 +4,4 @@ WebApp.Router.map ->
     @resource "user", {path: "/:user_id"}, ->
       @route "edit"
     @route "create"
+  @route "contact"
