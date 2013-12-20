@@ -17,9 +17,9 @@ L'application Rails + Ember.js. Pas encore en ligne, à tester en local pour l'i
 
 puis faire à la racine de `web-app` :
 
-    bundle install
-    rake db:migrate
-    rake db:seed
+    bundle install # installe toutes les dépendances (Rails, Ember, Bootstrap, ...)
+    rake db:migrate # créer la base de données (en SQLite)
+    rake db:seed # remplit la base de données de données initiales
 
 On démarre le serveur :
 
