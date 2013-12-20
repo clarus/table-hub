@@ -11,7 +11,11 @@ Les sources de [table-hub.com](http://table-hub.com/). Du HTML + Bootstrap avec 
 
 WebApp
 ------
-L'application Rails + Ember.js. Pas encore en ligne, à tester en local pour l'instant. Pour l'initialiser, installer [Rails](http://rubyonrails.org/) puis faire :
+L'application Rails + Ember.js. Pas encore en ligne, à tester en local pour l'instant. Pour l'initialiser, installer Ruby et [Bundler](http://bundler.io/) :
+
+    gem install bundler
+
+puis faire à la racine de `web-app` :
 
     bundle install
     rake db:migrate
@@ -22,5 +26,5 @@ On démarre le serveur :
     rails server
 
 L'application est accessible par [localhost:3000](http://localhost:3000/). Pour l'instant :
-* page d'accueil [localhost:3000/](http://localhost:3000/)
+* page d'accueil [localhost:3000/](http://localhost:3000/) avec gestion de la liste des utilisateurs
 * liste [JSON](http://www.json.org/) des comptes [localhost:3000/api/users](http://localhost:3000/api/users)
