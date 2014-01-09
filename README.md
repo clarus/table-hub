@@ -1,17 +1,37 @@
 Table-Hub
 =========
-Pour plus d'informations, voir le [Wiki](https://github.com/clarus/table-hub/wiki). Technologies à utiliser :
+Pour plus d'informations, voir le [Wiki](https://github.com/clarus/table-hub/wiki). Technologies utilisées pour l'instant :
 * HTML/CSS : [Bootstrap](http://getbootstrap.com/)
-* JavaScript client : [Ember.js](http://emberjs.com/)
 * Ruby serveur : [Rails](http://rubyonrails.org/)
+À l'avenir on pourra utiliser [Ember.js](http://emberjs.com/) pour le client.
 
-Static
-------
-Les sources de [table-hub.com](http://table-hub.com/). Du HTML + Bootstrap avec des templates Ruby pour générer du HTML statique. Doit être synchronisé manuellement avec le serveur pour mettre à jour la version en ligne.
+Table-Hub-Heroku (en ligne)
+---------------------------
+L'application Rails déployée sur Heroku : [table-hub-heroku](https://github.com/clarus/table-hub-heroku/).
 
-WebApp
-------
-L'application Rails + Ember.js. Pas encore en ligne, à tester en local pour l'instant. Pour l'initialiser, installer Ruby et [Bundler](http://bundler.io/) :
+Possesions
+----------
+### Comptes en ligne
+* GitHub : 7 $ / mois (deux dépots privés)
+* Heroku : 20 $ / mois pour SSL (à vérifier)
+
+### Noms de domaine
+* `table-hub.com`
+* `table-hub.fr`
+* `tablehub.fr`
+À terme il faudrait aussi acheter `tablehub.com` (expire le 20 mars).
+
+### SSL
+* `www.table-hub.com`
+Les certificats sont dans le dossier `ssl`.
+
+Static (abandonné)
+------------------
+Du HTML + Bootstrap avec des templates Ruby pour générer du HTML statique. Doit être synchronisé manuellement avec le serveur pour mettre à jour la version en ligne.
+
+WebApp (abandonné)
+------------------
+Une application Rails + Ember.js. Pour l'initialiser, installer Ruby et [Bundler](http://bundler.io/) :
 
     gem install bundler
 
