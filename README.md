@@ -19,10 +19,12 @@ Possesions
 * `table-hub.com`
 * `table-hub.fr`
 * `tablehub.fr`
+
 À terme il faudrait aussi acheter `tablehub.com` (expire le 20 mars).
 
 ### SSL
 * `www.table-hub.com`
+
 Les certificats sont dans le dossier `ssl`.
 
 Static (abandonné)
